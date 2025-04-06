@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/registro/register.css">
+</head>
+<body>
+    <div class="registro__container">
+        <div class="registro__titulo">Registro do Usuário</div>
+        <form id="registro-validacao">
+            <div class="registro__grupo">
+                <span>Nome</span>
+                <input type="text" name="nome" id="nome" placeholder="insira seu nome" required>
+            </div>
+
+            <div class="registro__grupo">
+                <span>Telefone</span>
+                <input type="tel" name="telefone" id="telefone" class="input-padrao" placeholder="insira seu telefone" required>
+            </div>
+
+            <div class="registro__grupo">
+                <span>E-mail</span>
+                <input type="email" name="email" id="email" placeholder="insira seu email" required>
+                <span id="email-error">E-mail inválido</span>
+            </div>
+
+            <div class="registro__grupo">
+                <span>ID do Usuário</span>
+                <input type="text" name="usuarioId" id="usuarioId" placeholder="insira seu id" required>
+            </div>
+
+            <div class="registro__grupo">
+                <span>Senha</span>
+                <input type="password" name="senha" id="senha" placeholder="crie uma senha" required>
+            </div>
+
+            <div class="registro__grupo">
+                <span>Confirme sua Senha</span>
+                <input type="password" name="confirmaSenha" id="confirmaSenha" placeholder="confirme sua senha" required>
+            </div>
+
+            <div class="button">
+                <button type="submit" id="botaoRegistro">Registrar-se</button>
+            </div>
+        </form>
+        <p id="mensagemRegistro"></p>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

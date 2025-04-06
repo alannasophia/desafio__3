@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.introdução {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; 
+}
+
+.titulo__form {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    font-style: normal;
+    color: #292524;
+}
+
+.subtitulo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+    color: #292524;
+}
+
+.introdução__conteudo {
+    margin: 3% 3% 3% 3%;
+}
+
+.introdução__conteudo__form,
+.identidade,
+.residencia {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.introdução__conteudo__label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #292524;
+}
+
+
+/** E-mail error*/
+
+.email-error {
+    color: #DC2626;
+    display: block;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid #DC2626;
+    transition: 5s;
+}
+/** Fim E-mail error*/
+
+
+/** Telefone Error*/
+.input-padrao {
+    color: #DC2626;
+    display: block;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid #DC2626;
+    transition: 5s;
+}
+/*Fim telefone error**/
+
+.introdução__conteudo__form__input {
+    padding: 8px;
+    border-radius: 8px;
+    gap: 8px;
+    border-color: #D6D3D1;
+    color: #292524;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.introdução__conteudo__titulo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+    color: #292524;
+    padding-top: 16px;
+}
+
+.introdução__conteudo__form__divisao {
+    display: grid;
+    grid-template-columns: 55% 40%;
+    justify-content: space-between;
+}
+
+.introdução_conteudo_container {
+    margin-bottom: 30px;
+    width: 500px;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+.conteudo_formulariodados_checkbox {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.conteudo_formulariodadoscheckbox_alinhamento {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #D6D3D1;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.conteudo_formulariodadoscheckboxalinhamento_radio {
+    margin-right: 85%;
+}
+
+
+
+.conteudo_formulario_politica {
+    margin-top: 36px;
+    margin-bottom: 48px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+strong .conteudo_formulario_politica {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.conteudo_formulario_botoes {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+}
+
+.conteudo_formulariobotoes_cancelar {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    padding: 14px;
+    border: solid 1px #E43A12;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #E43A12;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.conteudo_formulariobotoes_salvar {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    padding: 14px;
+    border: solid 1px #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    background-color: #E43A12;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.conteudo_formulariobotoes_enviar {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    padding: 14px;
+    border: solid 1px #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    background-color: #E43A12;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="reset"]:hover {
+    background-color: #E43A12;
+    color: #FFFFFF;
+}
+
+input[type="submit"]:hover {
+    background-color: #FFFFFF;
+    color: #E43A12;
+    border: solid 1px #E43A12;
+}
+
+
+
+.conteudo_formulariodadoscheckbox_alinhamento_elementos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: #000000CC;
+}
+
+.imagem__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #2135A6;
+    width: 50%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+
+}
+
+.imagem__wrapper {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ilustração {
+    width: 300px;
+    height: auto;
+}

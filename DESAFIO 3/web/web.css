@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(/imagens/fundo\ para\ capa.png);
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+.cabecalho {
+    background: #1a1a50;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho__menu__logo {
+    max-height: 50px;
+}
+
+
+/*.cabecalho__menu__btn {
+    margin: 50px;
+    padding: 10px 16px;
+    background: #48e08a;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.9s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho__menu__btn:hover {
+    background: #3ac97a;
+}*/
+
+.apresentação {
+    margin: 20px;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.direcionamento {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'Poppin', sans-serif;
+}
+
+.direcionamento__negrito {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'Poppin', sans-serif;
+    color: aqua;
+}
+
+.link__subtitulo {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-family: 'Poppin', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+
+.btn__formulaio {
+    margin: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #48e08a;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.btn__formulaio:hover {
+    background: #3ac97a;
+}
+
+
+.container__imagem {
+    position: absolute;
+    right: 0;
+    top: 70%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}

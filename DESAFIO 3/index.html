@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="webpagina" href="/pagina web/web.html">
+</head>
+
+<body>
+    <header></header>
+    <main class="introdução">
+        <section class="introdução__conteudo">
+           <a href="/web/web.html">
+            <img class="introdução__seta" src="/imagens/voltar.png" alt="ícone da seta voltar">
+           </a>
+            <div class="introdução_conteudo_container">
+                <h1 class="titulo__form">
+                    <strong>Formulário de Inscrição.</strong>
+                </h1>
+                <h2 class="subtitulo">
+                    Preencha os dados abaixo para fazer sua inscrição no Programa Trilhas.
+                </h2>
+            </div>
+            <h3 class="introdução__conteudo__titulo">Informações do Participante</h3>
+            <div class="introdução__conteudo__form">
+                <label for="nome" class="introdução__conteudo__label">Nome Completo:</label>
+                <input class="introdução__conteudo__form__input" type="text" id="nome">
+            </div>
+            <div class="introdução__conteudo__form">
+                <label class="introdução__conteudo__label" for="data">Data de nascimento:</label>
+                <input class="introdução__conteudo__form__input" type="date" id="data">
+            </div>
+            <div class="introdução__conteudo__form">
+                <label class="introdução__conteudo__label" for="cpf">Informe o seu CPF:</label>
+                <input class="introdução__conteudo__form__input" type="text" id="cpf" name="cpf">
+            </div class="introdução__conteudo__form">
+            <div class="introdução__conteudo__form">
+                <label class="introdução__conteudo__label" for="sexo">Sexo:</label>
+                <select class="introdução__conteudo__form__input" name="sexo" id="sexo" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino" selected>Feminino</option>
+                </select>
+            </div>
+            <!--Validação do Email-->
+        
+              <div class="introdução__conteudo__form">
+                <label class="introdução__conteudo__label" for="email">E-mail:</label>
+                <input class="introdução__conteudo__form__input" type="email" id="email" maxlength="60" size="65" required>
+                <span class="email-error" id="email-error">E-mail inválido</span>
+            </div> 
+             <!-- Fim da Validação do Email-->
+
+            <div class="introdução__conteudo__form">
+                <label class="introdução__conteudo__label" for="telefone">Telefone:</label>
+                <input class="introdução__conteudo__form__input" type="tel" id="telefone" class="input-padrao" 
+                  placeholder="(xx) xxxxx-xxxx" oninput="formatarTelefone(this)" maxlength="14" required>
+            </div>
+            <div class="identidade">
+                <label class="introdução__conteudo__label" for="identidade">Documento de identidade:</label>
+                <img src="/imagens/arquivos.png" alt="Nuvem">
+            </div>
+            <h4 class="introdução__conteudo__titulo">Endereço residencial</h4>
+            <div class="introdução__conteudo__form">
+                <label class="introdução__conteudo__label" for="cep">CEP:</label>
+                <input class="introdução__conteudo__form__input" type="number" id="cep">
+            </div>
+            <div class="introdução__conteudo__form__divisao">
+                <div class="introdução__conteudo__form">
+                    <label class="introdução__conteudo__label" for="rua">Rua:</label>
+                    <input class="introdução__conteudo__form__input" type="text" id="rua">
+                </div>
+                <div class="introdução__conteudo__form">
+                    <label class="introdução__conteudo__label" for="numero">Número:</label>
+                    <input class="introdução__conteudo__form__input" type="number" id="numero">
+                </div>
+            </div>
+            <div class="introdução__conteudo__form__divisao">
+                <div class="introdução__conteudo__form">
+                    <label class="introdução__conteudo__label" for="cidade">Cidade:</label>
+                    <input class="introdução__conteudo__form__input" type="text" id="cidade">
+                </div>
+                <div class="introdução__conteudo__form">
+                    <label class="introdução__conteudo__label" for="estado">Estado:</label>
+                    <input class="introdução__conteudo__form__input" type="text" id="estado">
+                </div>
+            </div>
+            <div class="residencia">
+                <label class="introdução__conteudo__label" for="residencia">Comprovante de residência:</label>
+                <img src="/imagens/arquivos.png" alt="Nuvem">
+            </div>
+            <h5 class="introdução__conteudo__titulo">Trilhas de aprendizagem</h5>
+            <fieldset class="trilhas__container">
+                <legend class="introdução__conteudo__label">Selecione apenas uma trilha</legend>
+
+                <div class="conteudo_formulariodados_checkbox">
+                    <div class="conteudo_formulariodadoscheckbox_alinhamento">
+                        <input id="trilha_front" name="trilha" class="conteudo_formulariodadoscheckboxalinhamento_radio"
+                            type="radio" value="front">
+                        <div class="conteudo_formulariodadoscheckbox_alinhamento_elementos">
+                            <img src="/imagens/front.png" alt="ícone Front-end">
+                            <label for="trilha_front">Programação Front-end</label>
+                        </div>
+                    </div>
+
+                    <div class="conteudo_formulariodadoscheckbox_alinhamento">
+                        <input id="trilha_back" name="trilha" class="conteudo_formulariodadoscheckboxalinhamento_radio"
+                            type="radio" value="back">
+                        <div class="conteudo_formulariodadoscheckbox_alinhamento_elementos">
+                            <img src="/imagens/back-end.png" alt="ícone Back-end">
+                            <label for="trilha_back">Programação Back-end</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conteudo_formulariodados_checkbox">
+                    <div class="conteudo_formulariodadoscheckbox_alinhamento">
+                        <input id="trilha_jogos" name="trilha" class="conteudo_formulariodadoscheckboxalinhamento_radio"
+                            type="radio" value="jogos">
+                        <div class="conteudo_formulariodadoscheckbox_alinhamento_elementos">
+                            <img src="/imagens/jogos.png" alt="ícone Jogos">
+                            <label for="trilha_jogos">Programação de Jogos</label>
+                        </div>
+                    </div>
+
+                    <div class="conteudo_formulariodadoscheckbox_alinhamento">
+                        <input id="trilha_ux" name="trilha" class="conteudo_formulariodadoscheckboxalinhamento_radio"
+                            type="radio" value="design">
+                        <div class="conteudo_formulariodadoscheckbox_alinhamento_elementos">
+                            <img src="/imagens/ux.png" width="40px" alt="ícone UX">
+                            <label for="trilha_ux">Design e Experiência</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conteudo_formulariodados_checkbox">
+                    <div class="conteudo_formulariodadoscheckbox_alinhamento">
+                        <input id="trilha_ciencia" name="trilha"
+                            class="conteudo_formulariodadoscheckboxalinhamento_radio" type="radio" value="ciencia">
+                        <div class="conteudo_formulariodadoscheckbox_alinhamento_elementos">
+                            <img src="/imagens/icon-dados.png" alt="ícone Dados">
+                            <label for="trilha_ciencia">Ciência de Dados</label>
+                        </div>
+                    </div>
+                </div>
+
+            </fieldset>
+            <div class="conteudo_formulario_politica">
+                <input id="termos" name="termos" type="checkbox">
+                <label for="termos">Declaro que li e concordo com os <strong class="termos-politica">Termos e
+                        Condições</strong> e com a
+                    <strong class="termos-politica">Política de Privacidade</strong></label>
+            </div>
+            <div class="conteudo_formulario_botoes">
+                <input class="conteudo_formulariobotoes_cancelar" type="reset" value="Cancelar">
+                <input class="conteudo_formulariobotoes_salvar" type="submit" value="Salvar informações" onclick="salvarInformacoes()">
+                <form id="form-inscricao">
+                    <input class="conteudo_formulariobotoes_enviar" type="submit" value="Fazer inscrição">
+                </form>
+            </div>
+        </section>
+        <section class="imagem__container">
+            <div class="imagem__wrapper">
+                <img class="ilustracao" src="/imagens/ilustracao do formulario.png" width="500px" alt="formulario">
+                <img class="logo_trilhas" src="/imagens/logo trilhas.png" width="212px" alt="logo">
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
