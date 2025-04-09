@@ -257,72 +257,84 @@ input[type="submit"]:hover {
     height: auto;
 }
 
-
-
-
-
-
-
-
-
-
-/* Telas médias (tablets) */
-@media (max-width: 992px) {
+/* Media para mobile*/
+@media (max-width: 768px) {
     .introdução {
         flex-direction: column;
-        align-items: center;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    .introdução__conteudo {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .introdução_conteudo_container {
+        width: 100%;
+        border: none;
     }
     
     .imagem__container {
-        order: -1;
-        margin-bottom: 30px;
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+        position: relative;
     }
     
     .ilustracao {
-        width: 400px;
+        width: 80%;
+        max-width: 300px;
+    }
+    
+    .logo_trilhas {
+        width: 60%;
+        max-width: 180px;
+    }
+    
+    .introdução__conteudo__form__input {
+        width: 100%;
+    }
+    
+    .introdução__conteudo__form__divisao {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
     
     .conteudo_formulariodados_checkbox {
-        flex-wrap: wrap;
-    }
-}
-
-/* Telas pequenas (celulares grandes) */
-@media (max-width: 768px) {
-    .introdução__conteudo__form__divisao {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 15px;
     }
     
     .conteudo_formulario_botoes {
         flex-direction: column;
+        gap: 10px;
     }
     
-    .ilustracao {
-        width: 300px;
-    }
-    
-    .titulo__form {
-        font-size: 24px;
+    .conteudo_formulariobotoes_cancelar,
+    .conteudo_formulariobotoes_salvar,
+    .conteudo_formulariobotoes_enviar {
+        width: 100%;
     }
 }
 
-/* Telas muito pequenas (celulares) */
-@media (max-width: 576px) {
-    .introdução__conteudo {
-        padding: 20px;
+/* Media para telas muito pequenas */
+@media (max-width: 480px) {
+    .titulo__form {
+        font-size: 20px;
     }
     
-    .ilustracao {
-        width: 250px;
+    .subtitulo {
+        font-size: 16px;
     }
     
-    .logo_trilhas {
-        width: 180px;
+    .introdução__conteudo__titulo {
+        font-size: 18px;
     }
     
     .conteudo_formulariodadoscheckbox_alinhamento_elementos {
-        flex-direction: column;
-        align-items: flex-start;
+        font-size: 14px;
     }
 }

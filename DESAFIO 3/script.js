@@ -1,23 +1,21 @@
-/** Página de Registro do usuário */
-
-// Array para armazenar campos inválidos
+// Armazenar campos inválidos
 const camposInvalidos = [];
 
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('form-inscricao');
 
-    // Inicializa máscaras e validações
+    // Máscaras e validações
     aplicarMascaras();
     configurarValidacoes();
     carregarDadosSalvos();
     
-    // Evento de submit do formulário
+    // Submit
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         
         console.log('Formulário submetido - iniciando validação');
         
-        // Limpa erros anteriores
+        // Limpa erros 
         camposInvalidos.length = 0;
         
         if (validarFormulario()) {
@@ -47,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Função para aplicar máscaras aos campos
 function aplicarMascaras() {
-    // Máscara para CPF (000.000.000-00)
+    
     const cpfInput = document.getElementById('cpf');
     if (cpfInput) {
         cpfInput.addEventListener('input', function(e) {
@@ -60,7 +58,7 @@ function aplicarMascaras() {
         });
     }
     
-    // Máscara para Telefone ((00) 00000-0000)
+    
     const telInput = document.getElementById('telefone');
     if (telInput) {
         telInput.addEventListener('input', function(e) {
@@ -78,7 +76,6 @@ function aplicarMascaras() {
         });
     }
     
-    // Máscara para CEP (00000-000)
     const cepInput = document.getElementById('cep');
     if (cepInput) {
         cepInput.addEventListener('input', function(e) {
@@ -97,7 +94,7 @@ function aplicarMascaras() {
     }
 }
 
-// Função para buscar endereço via API ViaCEP
+// Função para buscar endereço 
 function buscarEnderecoPorCEP(cep) {
     fetch(`https://viacep.com.br/ws/${cep}/json/`)
         .then(response => {
@@ -115,7 +112,7 @@ function buscarEnderecoPorCEP(cep) {
             document.getElementById('cidade').value = data.localidade || '';
             document.getElementById('estado').value = data.uf || '';
             
-            // Foca no campo número após preencher automaticamente
+
             document.getElementById('numero').focus();
         })
         .catch(error => {
@@ -126,7 +123,7 @@ function buscarEnderecoPorCEP(cep) {
         });
 }
 
-// Configura validações quando o campo perde o foco
+
 function configurarValidacoes() {
     const campos = [
         { id: 'nome', validator: validarNome },
@@ -161,7 +158,7 @@ function configurarValidacoes() {
     });
 }
 
-// Função principal de validação
+// Validação
 function validarFormulario() {
     camposInvalidos.length = 0;
     
@@ -436,7 +433,7 @@ function validarTermos() {
     return true;
 }
 
-// Funções auxiliares para manipulação de erros
+// Manipulação de erros
 function criarOuObterErrorElement(input) {
     let errorElement = input.nextElementSibling;
     
@@ -474,7 +471,7 @@ function removerErro(input, errorElement) {
     errorElement.style.display = 'none';
 }
 
-// Função para salvar dados localmente
+// Função para salvar dados 
 function salvarDadosLocalmente() {
     const formData = {
         nome: document.getElementById('nome').value,
@@ -494,7 +491,7 @@ function salvarDadosLocalmente() {
     localStorage.setItem('formInscricaoDados', JSON.stringify(formData));
 }
 
-// Função para carregar dados salvos localmente
+// Função para carregar dados salvos 
 function carregarDadosSalvos() {
     const dadosSalvos = localStorage.getItem('formInscricaoDados');
     if (dadosSalvos) {
@@ -530,7 +527,6 @@ function salvarInformacoes() {
     alert('Informações salvas com sucesso! Você pode continuar preenchendo mais tarde.');
 }
 
-// Adiciona eventos para salvar automaticamente quando os campos mudam
 document.querySelectorAll('#form-inscricao input, #form-inscricao select').forEach(element => {
     element.addEventListener('change', salvarDadosLocalmente);
     element.addEventListener('blur', salvarDadosLocalmente);

@@ -124,7 +124,7 @@ body {
 
 
 
-/* ===== [RESPONSIVIDADE] ===== */
+/* [RESPONSIVIDADE] */
 @media (max-width: 768px) {
     .registro__container {
         max-width: 90%;
@@ -132,7 +132,7 @@ body {
     }
     
     .registro__titulo {
-        font-size: 1.4rem; /* 22px */
+        font-size: 1.4rem; 
     }
     
     .registro__grupo input {
