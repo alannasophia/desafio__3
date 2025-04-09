@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(/imagens/tecnologia.jpg) no-repeat;
+    background: url(/DESAFIO\ 3//imagens/tecnologia.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -121,3 +121,50 @@ body {
     font-weight: 600;
 }
 /* Fim do Login */
+
+
+
+/* [RESPONSIVIDADE] */
+@media (max-width: 768px) {
+    .registro__container {
+        max-width: 90%;
+        padding: 15px;
+    }
+    
+    .registro__titulo {
+        font-size: 1.4rem; 
+    }
+    
+    .registro__grupo input {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    #botaoRegistro {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .registro__container {
+        max-width: 95%;
+        padding: 0.8rem;
+    }
+    
+    .registro__titulo {
+        font-size: 1.2rem; /* 19px */
+        margin-bottom: 1rem;
+    }
+    
+    .registro__grupo {
+        margin-bottom: 0.8rem;
+    }
+    
+    .registro__grupo span {
+        font-size: 0.9rem;
+    }
+    
+    #botaoRegistro {
+        font-size: 0.9rem;
+    }
+}
