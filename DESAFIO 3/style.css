@@ -256,3 +256,73 @@ input[type="submit"]:hover {
     width: 300px;
     height: auto;
 }
+
+
+
+
+
+
+
+
+
+
+/* Telas médias (tablets) */
+@media (max-width: 992px) {
+    .introdução {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .imagem__container {
+        order: -1;
+        margin-bottom: 30px;
+    }
+    
+    .ilustracao {
+        width: 400px;
+    }
+    
+    .conteudo_formulariodados_checkbox {
+        flex-wrap: wrap;
+    }
+}
+
+/* Telas pequenas (celulares grandes) */
+@media (max-width: 768px) {
+    .introdução__conteudo__form__divisao {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .conteudo_formulario_botoes {
+        flex-direction: column;
+    }
+    
+    .ilustracao {
+        width: 300px;
+    }
+    
+    .titulo__form {
+        font-size: 24px;
+    }
+}
+
+/* Telas muito pequenas (celulares) */
+@media (max-width: 576px) {
+    .introdução__conteudo {
+        padding: 20px;
+    }
+    
+    .ilustracao {
+        width: 250px;
+    }
+    
+    .logo_trilhas {
+        width: 180px;
+    }
+    
+    .conteudo_formulariodadoscheckbox_alinhamento_elementos {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

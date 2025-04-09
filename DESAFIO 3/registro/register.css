@@ -159,5 +159,49 @@ form .button {
 }
 
 
+/* ===== [RESPONSIVIDADE] ===== */
+@media (max-width: 768px) {
+    .registro__container {
+        max-width: 90%;
+        padding: 15px;
+    }
+    
+    .registro__titulo {
+        font-size: 1.4rem; /* 22px */
+    }
+    
+    .registro__grupo input {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    #botaoRegistro {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .registro__container {
+        max-width: 95%;
+        padding: 0.8rem;
+    }
+    
+    .registro__titulo {
+        font-size: 1.2rem; /* 19px */
+        margin-bottom: 1rem;
+    }
+    
+    .registro__grupo {
+        margin-bottom: 0.8rem;
+    }
+    
+    .registro__grupo span {
+        font-size: 0.9rem;
+    }
+    
+    #botaoRegistro {
+        font-size: 0.9rem;
+    }
+}
 
 
